@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E9BC98720F32C7300E3BBC2 /* NSObject+MTKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9BC98620F32C7300E3BBC2 /* NSObject+MTKVO.m */; };
 		0EFBAD8820EF35F700CBDB9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBAD8720EF35F700CBDB9C /* AppDelegate.m */; };
 		0EFBAD8B20EF35F700CBDB9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBAD8A20EF35F700CBDB9C /* ViewController.m */; };
 		0EFBAD8E20EF35F700CBDB9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EFBAD8C20EF35F700CBDB9C /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		0EFBAD9620EF360200CBDB9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBAD9520EF360200CBDB9C /* main.m */; };
 		0EFBADA020EF360200CBDB9C /* KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBAD9F20EF360200CBDB9C /* KVOTests.m */; };
 		0EFBADAB20EF360200CBDB9C /* KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBADAA20EF360200CBDB9C /* KVOUITests.m */; };
+		0EFBADBA20EF3C9500CBDB9C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBADB920EF3C9500CBDB9C /* Person.m */; };
+		0EFBADBD20EF433100CBDB9C /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFBADBC20EF433100CBDB9C /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E9BC98520F32C7300E3BBC2 /* NSObject+MTKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKVO.h"; sourceTree = "<group>"; };
+		0E9BC98620F32C7300E3BBC2 /* NSObject+MTKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKVO.m"; sourceTree = "<group>"; };
 		0EFBAD8320EF35F700CBDB9C /* KVO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KVO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFBAD8620EF35F700CBDB9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0EFBAD8720EF35F700CBDB9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		0EFBADA620EF360200CBDB9C /* KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EFBADAA20EF360200CBDB9C /* KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOUITests.m; sourceTree = "<group>"; };
 		0EFBADAC20EF360200CBDB9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EFBADB820EF3C9500CBDB9C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0EFBADB920EF3C9500CBDB9C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		0EFBADBB20EF433100CBDB9C /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		0EFBADBC20EF433100CBDB9C /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,8 @@
 		0EFBAD7A20EF35F700CBDB9C = {
 			isa = PBXGroup;
 			children = (
+				0E9BC98520F32C7300E3BBC2 /* NSObject+MTKVO.h */,
+				0E9BC98620F32C7300E3BBC2 /* NSObject+MTKVO.m */,
 				0EFBAD8520EF35F700CBDB9C /* KVO */,
 				0EFBAD9E20EF360200CBDB9C /* KVOTests */,
 				0EFBADA920EF360200CBDB9C /* KVOUITests */,
@@ -105,6 +116,10 @@
 				0EFBAD8720EF35F700CBDB9C /* AppDelegate.m */,
 				0EFBAD8920EF35F700CBDB9C /* ViewController.h */,
 				0EFBAD8A20EF35F700CBDB9C /* ViewController.m */,
+				0EFBADB820EF3C9500CBDB9C /* Person.h */,
+				0EFBADB920EF3C9500CBDB9C /* Person.m */,
+				0EFBADBB20EF433100CBDB9C /* Dog.h */,
+				0EFBADBC20EF433100CBDB9C /* Dog.m */,
 				0EFBAD8C20EF35F700CBDB9C /* Main.storyboard */,
 				0EFBAD8F20EF360200CBDB9C /* Assets.xcassets */,
 				0EFBAD9120EF360200CBDB9C /* LaunchScreen.storyboard */,
@@ -264,7 +279,10 @@
 			files = (
 				0EFBAD8B20EF35F700CBDB9C /* ViewController.m in Sources */,
 				0EFBAD9620EF360200CBDB9C /* main.m in Sources */,
+				0EFBADBD20EF433100CBDB9C /* Dog.m in Sources */,
+				0EFBADBA20EF3C9500CBDB9C /* Person.m in Sources */,
 				0EFBAD8820EF35F700CBDB9C /* AppDelegate.m in Sources */,
+				0E9BC98720F32C7300E3BBC2 /* NSObject+MTKVO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,7 +452,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXZMK9FZ55;
 				INFOPLIST_FILE = KVO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +470,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MXZMK9FZ55;
 				INFOPLIST_FILE = KVO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

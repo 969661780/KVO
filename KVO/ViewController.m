@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import "NSObject+MTKVO.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong)Person *personPeople;
 
 @end
 
@@ -16,14 +20,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Person *p = [Person new];
+    
+    _personPeople = p;
+    [_personPeople MT_addObserver:self forKeyPath:@"name" options:(NSKeyValueObservingOptionNew) context:nil];
+//    [p addObserver:self forKeyPath:@"dogg" options:(NSKeyValueObservingOptionNew) context:nil];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    NSLog(@"%@",change);
 }
-
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    static int a = 0;
+//    [_personPeople willChangeValueForKey:@"name"];
+    _personPeople.name = [NSString stringWithFormat:@"%d",a++];
+//     [_personPeople didChangeValueForKey:@"name"];
+//   NSMutableArray *arr = [self.personPeople mutableArrayValueForKey:@"arr"];
+//    [arr addObject:@"123"];
+    
+}
 @end
